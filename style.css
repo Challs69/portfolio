@@ -1,0 +1,22 @@
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+.heading{
+    background-color: #030164;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo{
+    display: flex;
+    border: solid 1px;
+    border-radius: 24px;
+    width: 50px;
+    height: 50px;
+}
