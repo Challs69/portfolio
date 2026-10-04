@@ -7,23 +7,32 @@
 
     <link href="style.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
     <body>
 
         <header>
             <div class="heading">
-                <div class="logo">
-                    <img src="images/devLogo.png" alt="Devloper Logo">    
-                </div>
-                <div class="head">
-                    <a href="#">Challs</a>
+                <div class="headLeft">
+                    <div class="logo">
+                        <img src="images/devLogo.png" alt="Devloper Logo" class="logoimg">    
+                    </div>
+                    <div class="head">
+                        <a href="#">Challs</a>
+                    </div>
                 </div>
 
-                <nav>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a> 
-                </nav>
+
+                <div class="headRight">
+                    <nav>
+                        <a href="#about" class="tc1">About</a>
+                        <a href="#contact">Contact</a> 
+                    </nav>
+                </div>    
             </div>
 
         </header>
@@ -35,39 +44,40 @@
                 <p>Hi, I'm Challs</p>
                 <p>BCA Student & Aspiring Web Developer</p>
                 <p>I'm a first-year BCA student learning web development, programming, and computer science fundamentals.</p>
+                
+                <nav>
+                    <a href="#project">View My Project</a>
+                    <a href="#contact">Contact Me</a>
+                </nav>
+                
             </div>
 
             <div class="rightSide">
                 <img src="images/devImage.png" alt="Devloper Iamge">
             </div>
 
-            <div class="heroNav">
-
-                <nav>
-                    <a href="#project">View My Project</a>
-                    <a href="#contact">Contact Me</a>
-                </nav>
-
-            </div>
-
         </div>
 
         <div class="aboutSection" id="about">
 
-            <h2>About Me</h2>
+            <div class="inAbout">
 
-            <p>I'm a first-year Bachelor of Computer Applications (BCA) student interested in software development and web technologies.</p>
+                <h2>About Me</h2>
+
+                <p>I'm a first-year Bachelor of Computer Applications (BCA) student interested in software development and web technologies.</p>
             
-            <p>Currently, I'm learning:</p>
+                <p>Currently, I'm learning:</p>
 
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java Script</li>
-                <li>C / Java</li>
-            </ul>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java Script</li>
+                    <li>C / Java</li>
+                </ul>
 
-            <p>My goal is to build strong programming fundamentals and eventually become a professional software developer.</p>
+                <p>My goal is to build strong programming fundamentals and eventually become a professional software developer.</p>
+
+            </div>
         
         </div>
 
@@ -82,7 +92,7 @@
                     <h3>Frontend</h3>
 
                     <div class="images">
-                        <img src="#" alt="frontend">
+                        <img src="images/frontend_1x1.png" alt="frontend">
                     </div>
 
                     <ul>
@@ -98,7 +108,7 @@
                     <h3>Programing</h3>
 
                     <div class="images">
-                        <img src="#" alt="programing">
+                        <img src="images/programming_1x1.png" alt="programing">
                     </div>
 
                     <ul>
@@ -114,7 +124,7 @@
                     <h3>Tools</h3>
 
                     <div class="images">
-                        <img src="#" alt="Tools">
+                        <img src="images/software_tools_1x1.png" alt="Tools">
                     </div>
 
                     <ul>
@@ -139,15 +149,19 @@
 
         <div class="projectSection" id="project">
 
-            <div class="card" id="pscard1">
+            <h2>Projects</h2>
+
+            <div class="containerProject">
+
+                <div class="card" id="pscard1">
                 
-                <div class="images">
+                    <div class="images">
 
-                    <img src="#" alt="recipeWeb">
+                        <img src="images/page2.png" alt="recipeWeb">
 
-                </div>
+                    </div>
 
-                <div class="projectInfo">
+                    <div class="projectInfo">
 
                     
 
@@ -169,29 +183,21 @@
 
                         <a href="#">GitHub</a>
                         <a href="#">Live Demo</a>
+                    </div>
+                </div>
+            
 
-                   
+                <div class="card" id="pscard2">
+                
+                    <div class="images">
 
-                    <div class="rightInfo">
-
-                        
+                        <img src="images/page1.png" alt="demoWebPage">
 
                     </div>
 
-                </div>
-            </div>
+                    <div class="projectInfo">
 
-            <div class="card" id="pscard2">
-                
-                <div class="images">
-
-                    <img src="#" alt="demoWebPage">
-
-                </div>
-
-                <div class="projectInfo">
-
-                    <h3>HTML & CSS Demo Website</h3>
+                        <h3>HTML & CSS Demo Website</h3>
 
                         <p>A demo webpage created to practice HTML and CSS styling and layout.</p>
                     
@@ -210,8 +216,10 @@
                         <a href="#">GitHub</a>
                         <a href="#">Live Demo</a>
 
+                    </div>
                 </div>
             </div>
+            
 
         </div>
 
@@ -221,18 +229,20 @@
 
             <p>Interested in collaborating or just want to say hello?</p>
 
-            <div class="email">
-                <img src="images/icons8-email-50.png" alt="email">
-                <a href="mailto:chaitanyavagal99@gmail.com">
-                Email Me
-                </a>
-            </div>
+            <div class="contact">
+                <div class="email">
+                    <img src="images/icons8-email-50.png" alt="email">
+                    <a href="mailto:chaitanyavagal99@gmail.com">
+                    Email Me
+                    </a>
+                </div>
 
-            <div class="github">
-                <img src="images/icons8-github-50.png" alt="github">
-                <a href="https://github.com/Challs69" target="_blank" rel="noopener noreferrer">
-                GitHub
+                <div class="github">
+                    <img src="images/icons8-github-50.png" alt="github">
+                    <a href="https://github.com/Challs69" target="_blank" rel="noopener noreferrer">
+                    GitHub
                 </a>
+                </div>
             </div>
         </div>
     
