@@ -58,6 +58,8 @@ body {
     color: azure;
     padding: 24px;
     justify-content: space-around;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .rightSide img {
@@ -67,11 +69,16 @@ body {
     display: flex;
     flex-shrink: 1;
     margin: 8px 0px;
+    max-width: 90%;
 }
 .leftSide h2{
     font-size: 32px;
     margin: 16px 0px;
     color: #F7FAFC;
+    
+}
+.leftSide a {
+    display: flex;
     
 }
 .leftSide p{
@@ -99,6 +106,8 @@ body {
 .leftSide nav{
     margin: 16px 0px;
     gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* about section */
@@ -141,11 +150,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex: 1;
 }
 .skillsSection .cards{
     display: flex;
     flex-direction: column;
     text-align: center;
+    flex: 1 1 auto;
 }
 .images img{
     width: 200px;
@@ -181,7 +192,7 @@ body {
     border-radius: 8px;
     background-color: #363199;
     color: #ffff;
-    padding: 8px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -199,6 +210,12 @@ body {
     width:300px ;
     height: auto;
     border-radius: 8px;
+}
+.containerProject a{
+    background-color:#484590;
+    border:#030164 solid 1px;
+    border-radius: 8px;
+    padding: 8px;
 }
 
 /* contact section */
